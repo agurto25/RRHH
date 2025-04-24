@@ -9,5 +9,5 @@ public interface IClienteServicio {
     public List<Clientes> ListarCliente();
     public Clientes buscarClientePorId(Integer idCliente);
     public Clientes guardarCliente(Clientes cliente);
-    public void eliminarEmpleado(Clientes cliente);
+    public void eliminarCliente(Clientes cliente);
 }

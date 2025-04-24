@@ -20,7 +20,7 @@ public class ClienteServicio implements IClienteServicio {
     @Override
     public Clientes buscarClientePorId(Integer idCliente) {
         Clientes cliente = clienteRrepositorio.findById(idCliente).orElse(null);
-        return null;
+        return cliente;
     }
 
     @Override
@@ -29,7 +29,7 @@ public class ClienteServicio implements IClienteServicio {
     }
 
     @Override
-    public void eliminarEmpleado(Clientes cliente) {
+    public void eliminarCliente(Clientes cliente) {
         clienteRrepositorio.delete(cliente);
 
     }

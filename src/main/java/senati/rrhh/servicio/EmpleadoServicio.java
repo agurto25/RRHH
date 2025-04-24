@@ -20,7 +20,7 @@ public class EmpleadoServicio implements IEmpleadoServicio{
     @Override
     public Empleado buscarEmpleadoPorId(Integer idEmpleado) {
         Empleado empleado = empleadoRepositorio.findById(idEmpleado).orElse(null);
-        return null;
+        return empleado;
     }
 
     @Override

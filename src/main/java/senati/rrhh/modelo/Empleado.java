@@ -27,3 +27,6 @@ public class Empleado {
     String area;
     Double sueldo;
 }
+
+// Getters y Setters
+
