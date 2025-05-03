@@ -30,6 +30,6 @@ public class EmpleadoServicio implements IEmpleadoServicio{
 
     @Override
     public void eliminarEmpleado(Empleado empleado) {
-       empleadoRepositorio.save(empleado);
+       empleadoRepositorio.delete(empleado);
     }
 }
